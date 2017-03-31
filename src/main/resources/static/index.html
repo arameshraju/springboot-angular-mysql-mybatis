@@ -27,6 +27,19 @@ and open the template in the editor.
    
       <p>The ID is {{greeting.id}}</p>
       <p>The content is {{greeting.content}}</p>
+      <h1>Login </h1>
+      <button  ng-click="login()">login</button>
+      
+      <div ng-if="authenticated">
+          <h2>loged in</h2>
+                <button  ng-click="getresponse()">Response</button>
+                <button  ng-click="logout()">logout</button>
+
+      </div>
+      <div ng-if="! authenticated">
+          <h2>loged Out</h2>
+      </div>
+      
 
   </div> 
 
